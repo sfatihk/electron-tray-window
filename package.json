@@ -1,0 +1,31 @@
+{
+  "name": "electron-tray-window",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfatihk/electron-tray-window.git"
+  },
+  "keywords": [
+    "electron",
+    "tray",
+    "window",
+    "popup"
+  ],
+  "author": "Seyyid Fatih KOÇ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sfatihk/electron-tray-window/issues"
+  },
+  "homepage": "https://github.com/sfatihk/electron-tray-window#readme",
+  "dependencies": {
+    "electron": "^3.0.10"
+  },
+  "peerDependencies": {
+    "electron": "^3.0.10"
+  }
+}
