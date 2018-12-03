@@ -88,7 +88,7 @@ function createWindow(windowUrl) {
     fullscreenable: false,
     resizable: false,
     useContentSize: true,
-    transparent: false,
+    transparent: true,
     alwaysOnTop: true,
     webPreferences: {
       backgroundThrottling: false
@@ -109,6 +109,7 @@ function setWindowAutoHide() {
   window.on("blur", () => {
     if (!window.webContents.isDevToolsOpened()) {
       window.hide();
+      ipcMain.emit("tray-window-hidden", { window: window, tray: tray });
     }
   });
 }
@@ -117,6 +118,7 @@ function toggleWindow() {
   if (window.isVisible()) {
     window.hide();
     ipcMain.emit("tray-window-hidden", { window: window, tray: tray });
+    return;
   }
 
   showWindow();
