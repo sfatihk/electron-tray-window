@@ -9,7 +9,7 @@ Electron Tray Window, basically places the window near the tray icon. While thes
 
 ## Preview [demo project](https://github.com/sfatihk/electron-tray-window/tree/master/examples)
 
-<img src="https://github.com/sfatihk/electron-tray-window/blob/master/resources/showcase-short.gif" width="300" /> <img src="https://github.com/sfatihk/electron-tray-window/blob/master/resources/showcase.gif" width="550"/>
+<img src="https://raw.githubusercontent.com/sfatihk/electron-tray-window/master/resources/showcase-short.gif" width="300" /> <img src="https://raw.githubusercontent.com/sfatihk/electron-tray-window/master/resources/showcase.gif" width="550"/>
 
 ## Install
 
