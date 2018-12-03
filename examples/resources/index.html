@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Electron-Tray-Window Example</title>
+  </head>
+  <style>
+    body {
+      overflow: hidden;
+      width: 341px;
+    }
+    #container {
+      border-radius: 30px;
+      border: 20px;
+      border-color: #434344;
+      border-style: solid;
+      width: 290px;
+      height: 330px;
+      background-color: #cd970c;
+    }
+    #left-wrapper {
+      width: 140px;
+      margin-left: 10px;
+      margin-top: 20px;
+      float: left;
+    }
+    .small-box {
+      border-radius: 7px;
+      width: 40px;
+      height: 40px;
+      background-color: #434344;
+      float: left;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    #big-box {
+      border-radius: 7px;
+      background-color: #434344;
+      float: left;
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+      margin-top: 40px;
+      color: #cd970c;
+      font-weight: bolder;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Segoe UI";
+    }
+    #wide-box {
+      border-radius: 7px;
+      background-color: #434344;
+      float: left;
+      width: 100px;
+      height: 40px;
+      margin-left: 30px;
+      margin-top: 20px;
+      color: #cd970c;
+      font-weight: bolder;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Segoe UI";
+    }
+    #center-wrapper {
+      float: left;
+      width: 120px;
+    }
+    #huge-box {
+      border-radius: 7px;
+      background-color: #434344;
+      float: left;
+      width: 220px;
+      height: 80px;
+      margin-left: 30px;
+      margin-top: 20px;
+      color: #cd970c;
+      font-weight: bolder;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Segoe UI";
+    }
+    .interactive {
+      cursor: pointer !important;
+    }
+    .interactive:hover {
+      background-color: #3c3c40 !important;
+      color: #e9af1d !important;
+    }
+  </style>
+
+  <body>
+    <div id="container">
+      <div id="left-wrapper">
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+      </div>
+      <div id="big-box" class="interactive">ELECTRON</div>
+      <div id="wide-box" class="interactive">TRAY</div>
+      <div id="center-wrapper">
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+      </div>
+      <div id="huge-box" class="interactive">WINDOWS</div>
+    </div>
+  </body>
+</html>
