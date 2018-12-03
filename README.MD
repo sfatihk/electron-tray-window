@@ -7,10 +7,9 @@
 
 Electron Tray Window, basically places the window near the tray icon. While these happening, you can customize window / tray or tracking the events.
 
-## Preview
+## Preview [demo project](https://github.com/sfatihk/electron-tray-window/tree/master/examples)
 
-<img src="resources/showcase-short.gif" width="300"/>
-<img src="resources/showcase.gif" width="600"/>
+<img src="resources/showcase-short.gif" width="300" /> <img src="resources/showcase.gif" width="550"/>
 
 ## Install
 
