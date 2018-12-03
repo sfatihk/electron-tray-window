@@ -23,7 +23,7 @@ npm install electron-tray-window
 const trayWindow = require("electron-tray-window");
 ```
 
-You can use different ways. "setOptions" function accepts object value.
+You can use different ways. "setOptions()" function accepts object value.
 
 If you have already created tray or window outside **TrayWindow**, you can pass as arguments to **.setOptions()** function,
 
