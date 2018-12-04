@@ -10,6 +10,6 @@
   "author": "sfatihk <sakkarmen@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "electron-tray-window": "^1.0.1"
+    "electron-tray-window": "^1.2.2"
   }
 }
