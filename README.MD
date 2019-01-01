@@ -17,6 +17,12 @@ Electron Tray Window, basically places the window near the tray icon. While thes
 npm install electron-tray-window
 ```
 
+or
+
+```
+yarn add electron-tray-window
+```
+
 ## Usage
 
 ```js
