@@ -1,6 +1,6 @@
 {
   "name": "electron-tray-window",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A package for generate custom tray windows with Electron.js",
   "main": "src/index.js",
   "files": [

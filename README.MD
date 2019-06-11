@@ -191,6 +191,7 @@ ipcMain.on("tray-window-hidden", (e, a) => {
 | height       | Window height                                    | 200px   |
 | margin_x     | Vertical distance between window and tray icon   | 0px     |
 | margin_y     | Horizontal distance between window and tray icon | 0px     |
+| framed       | Is it window framed?                             | false   |
 
 ### Other functions
 

@@ -1,4 +1,5 @@
 const electron = require("electron");
+
 const { BrowserWindow, ipcMain, Tray } = electron;
 
 let tray = undefined;
@@ -10,6 +11,7 @@ let height = 300;
 
 let margin_x = 0;
 let margin_y = 0;
+let framed = false;
 
 function setOptions(options) {
   if (!validation(options)) return;
@@ -60,6 +62,7 @@ function setWindowSize(options) {
   if (options.height) height = options.height;
   if (options.margin_x) margin_x = options.margin_x;
   if (options.margin_y) margin_y = options.margin_y;
+  if (options.framed) framed = options.framed;
 }
 
 function createTray(trayIconPath) {
@@ -84,7 +87,7 @@ function createWindow(windowUrl) {
     maxWidth: width,
     maxHeight: height,
     show: false,
-    frame: false,
+    frame: framed,
     fullscreenable: false,
     resizable: false,
     useContentSize: true,
@@ -94,6 +97,7 @@ function createWindow(windowUrl) {
       backgroundThrottling: false
     }
   });
+  window.setMenu(null);
 
   setWindowUrl(windowUrl);
 
@@ -111,6 +115,10 @@ function setWindowAutoHide() {
       window.hide();
       ipcMain.emit("tray-window-hidden", { window: window, tray: tray });
     }
+  });
+  window.on("close", function(event) {
+    event.preventDefault();
+    window.hide();
   });
 }
 
