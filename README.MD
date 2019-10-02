@@ -1,3 +1,13 @@
+[![npm version](https://badge.fury.io/js/electron-tray-window.svg)](https://www.npmjs.com/package/electron-tray-window)
+[![npm version](https://img.shields.io/github/languages/code-size/sfatihk/electron-tray-window)](https://github.com/sfatihk/electron-tray-window)
+[![npm version](https://img.shields.io/npm/dt/electron-tray-window)](https://github.com/sfatihk/electron-tray-window)
+[![npm version](https://img.shields.io/github/issues/sfatihk/electron-tray-window)](https://github.com/sfatihk/electron-tray-window)
+[![npm version](https://img.shields.io/github/license/sfatihk/electron-tray-window)](https://github.com/sfatihk/electron-tray-window)
+
+
+
+
+
 <p align="center">
 <img src="resources/icon.png" width="300"/>
 </p>
