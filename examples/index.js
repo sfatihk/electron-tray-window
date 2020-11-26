@@ -5,7 +5,7 @@ const path = require("path");
 
 app.on("ready", () => {
   var timeout = 10
-  if (process.platform === 'linux') {
+  if (process.platform === "linux") {
     timout = 200
   }
   setTimeout(function () {
