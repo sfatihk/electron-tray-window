@@ -4,6 +4,10 @@ const { ipcMain, Tray, app, BrowserWindow } = require("electron");
 const path = require("path");
 
 app.on("ready", () => {
+  var timeout = 10
+  if (process.platform === 'linux') {
+    timout = 200
+  }
   setTimeout(function () {
     TrayWindow.setOptions({
       trayIconPath: path.join("resources/icon.png"),
@@ -11,5 +15,5 @@ app.on("ready", () => {
       width: 340,
       height: 380
     });
-  }, 100);
+  }, timout);
 });

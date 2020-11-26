@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron .",
-    "startOnLinux": "electron --enable-transparent-visuals --disable-gpu ."
+    "start": "electron --enable-transparent-visuals ."
   },
   "author": "sfatihk <sakkarmen@gmail.com>",
   "license": "MIT",
