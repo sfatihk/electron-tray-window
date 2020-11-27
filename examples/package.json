@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron --enable-transparent-visuals ."
   },
   "author": "sfatihk <sakkarmen@gmail.com>",
   "license": "MIT",
