@@ -116,10 +116,12 @@ function setWindowAutoHide() {
       ipcMain.emit("tray-window-hidden", { window: window, tray: tray });
     }
   });
-  window.on("close", function(event) {
-    event.preventDefault();
-    window.hide();
-  });
+  if (framed) {
+    window.on("close", function(event) {
+      event.preventDefault();
+      window.hide();
+    });
+  }
 }
 
 function toggleWindow() {
