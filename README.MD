@@ -9,7 +9,7 @@
 
 
 <p align="center">
-<img src="resources/icon.png" width="300"/>
+<img src="resources/icon.png" style="max-width:100%; width:300px"/>
 </p>
 <h2 align="center">Quickly create customizable  menu/pop-up for your application in system tray.</h2>
 
@@ -19,7 +19,7 @@ Electron Tray Window, basically places the window near the tray icon. While thes
 
 ## Preview [demo project](https://github.com/sfatihk/electron-tray-window/tree/master/examples)
 
-<img src="https://raw.githubusercontent.com/sfatihk/electron-tray-window/master/resources/showcase-short.gif" width="300" /> <img src="https://raw.githubusercontent.com/sfatihk/electron-tray-window/master/resources/showcase.gif" width="550"/>
+<img src="https://raw.githubusercontent.com/sfatihk/electron-tray-window/master/resources/showcase-short.gif" style="max-width:100%; width:300px"  /> <img src="https://raw.githubusercontent.com/sfatihk/electron-tray-window/master/resources/showcase.gif" style="max-width:100%; width:550px"/>
 
 ## Install
 
