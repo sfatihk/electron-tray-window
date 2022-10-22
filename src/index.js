@@ -21,18 +21,18 @@ function setOptions(options) {
 
 function validation(options) {
   if (typeof options !== "object") {
-    console.log("!!!tray-window can not create without any [options]");
+    console.log("tray-window can not create without any [options]!!!");
     return false;
   }
   if (!options.tray && !options.trayIconPath) {
     console.log(
-      "!!!tray-window can not create without [tray] or [trayIconPath] parameters"
+      "tray-window can not create without [tray] or [trayIconPath] parameters!!!"
     );
     return false;
   }
   if (!options.window && !options.windowUrl) {
     console.log(
-      "!!!tray-window can not create without [window] or [windowUrl] parameters"
+      "tray-window can not create without [window] or [windowUrl] parameters!!!"
     );
     return false;
   }
