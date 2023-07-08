@@ -51,7 +51,7 @@ function init(options) {
     toggleWindow();
   });
 
-  setWindowAutoHide();
+  'autoHide' in options ? setWindowAutoHide(options.autoHide) : setWindowAutoHide(true);
   alignWindow();
 
   ipcMain.emit("tray-window-ready", { window: window, tray: tray });
@@ -108,19 +108,25 @@ function setWindowUrl(windowUrl) {
   window.loadURL(windowUrl);
 }
 
-function setWindowAutoHide() {
+function setWindowAutoHide(autoHide) {
   window.hide();
-  window.on("blur", () => {
-    if (!window.webContents.isDevToolsOpened()) {
-      window.hide();
-      ipcMain.emit("tray-window-hidden", { window: window, tray: tray });
-    }
-  });
-  if (framed) {
-    window.on("close", function(event) {
-      event.preventDefault();
-      window.hide();
+  
+  if (autoHide) {
+    window.on("blur", () => {
+      if (!window.webContents.isDevToolsOpened()) {
+        window.hide();
+        ipcMain.emit("tray-window-hidden", { window: window, tray: tray });
+      }
     });
+  }
+
+  if (framed) {
+    if (autoHide) {
+      window.on("close", function(event) {
+        event.preventDefault();
+        window.hide();
+      });
+    }
   }
 }
 
